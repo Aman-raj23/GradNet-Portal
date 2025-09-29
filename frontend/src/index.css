@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #003366;
+  --color-accent: #FFD700;
+  --color-bg: #F4F4F4;
+}
+
+html, body, #root { height: 100%; }
+body { font-family: 'Inter', ui-sans-serif, system-ui; background-color: var(--color-bg); color: #0f172a; }
+
+.container-safe { max-width: 1200px; margin: 0 auto; padding-left: 1rem; padding-right: 1rem; }
+
+.btn-primary { @apply bg-primary text-white px-4 py-2 rounded-md hover:brightness-110 transition; }
+.btn-accent { @apply bg-accent text-black px-4 py-2 rounded-md hover:brightness-110 transition; }
+.card { @apply bg-white rounded-xl shadow-sm border border-gray-200; }
