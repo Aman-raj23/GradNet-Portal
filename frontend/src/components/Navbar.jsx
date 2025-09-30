@@ -1,11 +1,16 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext.jsx'
 import { Menu } from 'lucide-react'
 
 export default function Navbar() {
   const { user, logout } = useAuth()
   const [open, setOpen] = React.useState(false)
+  const location = useLocation()
+
+  // Hide nav items on landing page when no one is logged in
+  const publicNoNavRoutes = ['/', '/login', '/register']
+  const showNav = !(publicNoNavRoutes.includes(location.pathname) && !user)
 
   const navItem = (to, label) => (
     <NavLink to={to} className={({isActive})=>`px-3 py-2 rounded-md ${isActive?'text-accent':'text-white/90 hover:text-accent'}`}>{label}</NavLink>
@@ -15,8 +20,10 @@ export default function Navbar() {
     <header className="bg-gradient-to-r from-primary to-[#001a44] sticky top-0 z-40 shadow">
       <div className="container-safe flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2">
+          <img src="/logo.png" alt="GradNet logo" className="h-8 w-8 rounded-sm" />
           <span className="text-white font-extrabold text-xl tracking-tight">GradNet</span>
         </Link>
+        {showNav && (
         <nav className="hidden md:flex items-center gap-1">
           {navItem(user?.role === 'admin' ? '/admin' : '/dashboard', 'Home')}
           <div className="group relative">
@@ -58,6 +65,7 @@ export default function Navbar() {
           </div>
           {/* Admin link removed; Home now routes to /admin when user is admin */}
         </nav>
+        )}
 
         <div className="flex items-center gap-2">
           {user ? (
@@ -71,10 +79,12 @@ export default function Navbar() {
               <Link to="/register" className="btn-primary bg-white text-primary">Register</Link>
             </>
           )}
-          <button className="md:hidden text-white" onClick={()=>setOpen(v=>!v)}><Menu size={22} /></button>
+          {showNav && (
+            <button className="md:hidden text-white" onClick={()=>setOpen(v=>!v)}><Menu size={22} /></button>
+          )}
         </div>
       </div>
-      {open && (
+      {open && showNav && (
         <div className="md:hidden bg-primary/95 text-white px-4 pb-4 space-y-2">
           <div className="flex flex-col">
             <Link to={user?.role === 'admin' ? '/admin' : '/dashboard'} className="py-1">Home</Link>
