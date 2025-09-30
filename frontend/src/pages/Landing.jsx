@@ -226,10 +226,14 @@ export default function Landing() {
                 <Button
                   to="/login"
                   variant="outline"
-                  className="text-lg px-8 py-3 inline-flex items-center justify-center bg-white text-[#001a44] border border-[#001a44] hover:bg-[#001a44] hover:text-white shadow"
+                  className="hidden"
+                >Sign In (placeholder)</Button>
+                <Link
+                  to="/login"
+                  className="text-lg px-8 py-3 inline-flex items-center justify-center bg-blue-900 text-white border border-blue-800 hover:bg-blue-800 hover:border-blue-900 shadow font-semibold rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300"
                 >
                   Sign In
-                </Button>
+                </Link>
               </div>
             </CardContent>
           </Card>
