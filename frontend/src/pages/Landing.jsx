@@ -226,7 +226,7 @@ export default function Landing() {
                 <Button
                   to="/login"
                   variant="outline"
-                  className="text-lg px-8 py-3 text-black inline-flex items-center justify-center border-primary text-primary hover:bg-primary/50"
+                  className="text-lg px-8 py-3 inline-flex items-center justify-center bg-white text-[#001a44] border border-[#001a44] hover:bg-[#001a44] hover:text-white shadow"
                 >
                   Sign In
                 </Button>
