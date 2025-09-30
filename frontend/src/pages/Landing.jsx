@@ -75,7 +75,7 @@ export default function Landing() {
   return (
     <div>
       <section className="bg-gradient-to-br from-primary to-black text-white">
-        <div className="container-safe py-20 text-center">
+        <div className="container-safe py-16 text-center">
           {/* <img
             src="/logo.png"
             alt="GradNet Logo"
