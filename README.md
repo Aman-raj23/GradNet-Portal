@@ -60,8 +60,10 @@ JWT_SECRET=dev_secret_change_me
 - This is a prototype using mock data and minimal auth. Do not use in production.
 - File types: React components/pages use `.jsx` as requested.
 - The backend uses `.js` files for Node (recommended).
+  
 
 ## Scripts
+
 - Frontend
   - `npm run dev` – start Vite dev server
   - `npm run build` – production build
