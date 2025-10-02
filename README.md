@@ -11,6 +11,7 @@ A full-stack prototype for an alumni engagement platform built with React + Tail
 - Accent: #FFD700 (Gold)
 - Background: #F4F4F4 (Light gray)
 - Font: Inter (Google Fonts)
+  
 
 ## Monorepo Structure
 ```
