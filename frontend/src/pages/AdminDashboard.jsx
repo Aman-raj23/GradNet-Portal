@@ -29,6 +29,7 @@ export default function AdminDashboard() {
   const handleApproval = (id, action) => {
     setPendingAlumni(prev => prev.filter(a => a.id !== id))
     // TODO: integrate API call if needed
+    
   }
 
   return (
