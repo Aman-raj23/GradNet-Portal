@@ -7,7 +7,7 @@ export const users = [
   { id: '6', name: 'Aman Mehta', email: 'aman@alumni.edu', role: 'alumni', year: 2014, major: 'Electrical Eng', city: 'Bangalore', industry: 'Energy' },
   { id: '7', name: 'Priya Nair', email: 'priya@alumni.edu', role: 'alumni', year: 2018, major: 'Data Science', city: 'Mumbai', industry: 'Analytics' },
   { id: 1007, name: 'Kabir Nair', role: 'alumni', year: '2016', major: 'Biotech', city: 'Kolkata', industry: 'Healthcare' },
-    { id: 1008, name: 'Ananya Iyer', role: 'alumni', year: '2020', major: 'Electrical', city: 'Bengaluru', industry: 'Energy' },
+  { id: 1008, name: 'Ananya Iyer', role: 'alumni', year: '2020', major: 'Electrical', city: 'Bengaluru', industry: 'Energy' },
     { id: 1009, name: 'Harsh Patel', role: 'alumni', year: '2019', major: 'Computer Science', city: 'Ahmedabad', industry: 'E-commerce' },
     { id: 1010, name: 'Priya Desai', role: 'alumni', year: '2018', major: 'Information Technology', city: 'Surat', industry: 'Retail' },
     { id: 1011, name: 'Aditya Rao', role: 'alumni', year: '2021', major: 'AI & ML', city: 'Bengaluru', industry: 'AI/ML' },
