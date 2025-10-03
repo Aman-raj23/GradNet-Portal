@@ -37,4 +37,5 @@ router.delete('/users/:id', (req, res, next) => {
 });
 
 router.use(errorHandler);
+
 export default router;
