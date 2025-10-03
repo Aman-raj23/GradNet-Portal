@@ -10,7 +10,7 @@ export const users = [
   { id: 1008, name: 'Ananya Iyer', role: 'alumni', year: '2020', major: 'Electrical', city: 'Bengaluru', industry: 'Energy' },
   { id: 1009, name: 'Harsh Patel', role: 'alumni', year: '2019', major: 'Computer Science', city: 'Ahmedabad', industry: 'E-commerce' },
   { id: 1010, name: 'Priya Desai', role: 'alumni', year: '2018', major: 'Information Technology', city: 'Surat', industry: 'Retail' },
-    { id: 1011, name: 'Aditya Rao', role: 'alumni', year: '2021', major: 'AI & ML', city: 'Bengaluru', industry: 'AI/ML' },
+  { id: 1011, name: 'Aditya Rao', role: 'alumni', year: '2021', major: 'AI & ML', city: 'Bengaluru', industry: 'AI/ML' },
     
 ];
 export const getAlumni = () => users.filter(u => u.role === 'alumni');
