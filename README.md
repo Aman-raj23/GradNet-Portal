@@ -2,7 +2,9 @@
 
 A full-stack prototype for an alumni engagement platform built with React + TailwindCSS (frontend) and Node.js/Express (backend). Uses mock data with a structure ready to expand to real databases (MongoDB or Supabase/Postgres).
 
-
+## Tech Stack
+- Frontend: React, Vite, TailwindCSS, Shadcn/ui, Lucide Icons, Recharts
+- Backend: Node.js (Express), JWT-based auth (mock), In-memory mock data
 
 ## Design System
 - Primary: #003366 (Deep Navy)
