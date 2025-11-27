@@ -74,8 +74,4 @@ JWT_SECRET=dev_secret_change_me
   - `npm run dev` – start dev server with nodemon
   - `npm start` – start production server
 
-## Next Steps
-- Replace mock data and in-memory stores with MongoDB or Supabase
-- Harden auth flows and role policies
-- Connect AI features to real LLM endpoints
-- Add e2e tests
+
