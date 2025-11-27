@@ -60,7 +60,10 @@ export default function App() {
             <Route path="/careers/post-job" element={<CareersPostJob />} />
             <Route path="/careers/ai-advisor" element={<CareersAIAdvisor />} />
             
-            
+            <Route path="/community/feed" element={<CommunityNewsFeed />} />
+            <Route path="/community/groups" element={<CommunityGroups />} />
+            <Route path="/network-map" element={<NetworkMap />} />
+
             <Route path="/donate" element={<Donation />} />
             <Route path="/admin" element={<ProtectedRoute roles={['admin']}><AdminDashboard /></ProtectedRoute>} />
             <Route path="/institute" element={<ProtectedRoute roles={['institute']}><InstituteDashboard /></ProtectedRoute>} />
