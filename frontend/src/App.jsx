@@ -69,8 +69,11 @@ export default function App() {
             <Route path="/institute" element={<ProtectedRoute roles={['institute']}><InstituteDashboard /></ProtectedRoute>} />
           </Routes>
         </main>
+        
         <Footer />
+        
       </div>
+      
     </AuthProvider>
   )
 }
